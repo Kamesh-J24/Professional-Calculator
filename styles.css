@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Calculator Container */
+.calculator-container {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields Styling */
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Buttons Styling */
+.buttons-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Clear Button Styling */
+.clear-button {
+    grid-column: span 2;
+    background-color: #f44336;
+}
+
+.clear-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Result Display Styling */
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+
+/*     .Calculate {
+                margin-top: 20px;
+            } 
+
+            input[type="number"] {
+                margin: 5px;
+                padding: 8px;
+                width: 100px;
+            }
+
+            button {
+                padding: 8px 15px;
+                margin: 5px;
+            }
+
+            #result {
+                margin-top: 10px;
+                font-weight: bold;
+            } */
+
+           /* * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background-color: #f0f2f5;
+            }
+    
+            .calculator-container {
+                width: 300px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+            }
+    
+            h3 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #333;
+            }
+    
+            .input-container {
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+            }
+    
+            .input-container input {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                text-align: center;
+            }
+    
+            .buttons-container {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+    
+            button {
+                padding: 10px;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            button:hover {
+                background-color: #45a049;
+            }
+    
+            #result {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 18px;
+                color: #333;
+                font-weight: bold;
+            }*/
