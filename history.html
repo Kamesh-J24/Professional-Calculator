@@ -1,89 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculation History</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .history-container {
-            width: 90%;
-            max-width: 500px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: left;
-        }
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #e7f5e9;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            color: #333;
-        }
-        .clear-history {
-            display: block;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #f44336;
-            color: white;
-            text-align: center;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .clear-history:hover {
-            background-color: #d32f2f;
-        }
-    </style>
-    <script>
-        function loadHistory() {
-            const historyContainer = document.getElementById('history');
-            const history = JSON.parse(localStorage.getItem('calculationHistory')) || [];
-            if (history.length === 0) {
-                historyContainer.innerHTML = "<p>No calculation history available.</p>";
-                return;
-            }
+<html>
 
-            historyContainer.innerHTML = '';
-            history.forEach(entry => {
-                const listItem = document.createElement('li');
-                //listItem.textContent = `${entry.date}: ${entry.result}`;
-                listItem.textContent = entry.result;  // Only display the result without the date
-                historyContainer.appendChild(listItem);
-            });
-        }
+  <head>
+     <link rel="stylesheet" href="hstyles.css" />
+     <script src="hscript.js"></script>
+     <title>Calculation History</title>
+  </head>
 
-        function clearHistory() {
-            localStorage.removeItem('calculationHistory');
-            loadHistory();  // Refresh to show empty history message
-        }
-    </script>
-</head>
-<body onload="loadHistory()">
-    <div class="history-container">
-        <h2>Calculation History</h2>
-        <ul id="history"></ul>
-        <a class="clear-history" onclick="clearHistory()">Clear History</a>
-    </div>
-</body>
+  <body onload="loadHistory()">
+
+       <div class="history-container">
+        
+           <h2>Calculation History</h2>
+           <ul id="history"></ul>
+           <a class="clear-history" onclick="clearHistory()">Clear History</a>
+
+        </div>
+        
+    </body>
+
 </html>
